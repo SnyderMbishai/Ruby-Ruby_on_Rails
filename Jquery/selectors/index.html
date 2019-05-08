@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>JQuery crash course | selectors</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <style>
+        body{
+            font-size: 17px;
+            font-family: arial;
+            background: #f4f4f4;
+            line-height: 1.5em;
+        }
+        header{
+			background:#333;
+			color:#fff;
+			padding:20px;
+			text-align: center;
+			border-bottom: 4px #000 solid;
+			margin-bottom: 10px;
+		}
+		#container{
+			width:90%;
+			margin:auto;
+			padding:10px;
+		}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>JQuery Crash Course</h1>
+    </header>
+
+    <div id="container">
+        <h1 id="heading1">Nana</h1>
+        <p id="para1">Hello world</p>
+        <h1 class="heading2">Nene</h1>
+        <p class="para2">Hello world again</p>
+
+    </div>
+
+    <script>
+        {% comment %} $('h1').hide(); {% endcomment %}
+        {% comment %} $('h1#heading1').hide(); {% endcomment %}
+        $('h1').hide();
+    </script>
+</body>
+</html>
